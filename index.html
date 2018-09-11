@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <title>Untitled Page</title>
+</head>
+<body>
+<p id="result"></p>
+
+<textarea cols="40" id="SearchText" rows="2"></textarea>
+
+<button onclick="myFunction()" type="button">Submit!</button>
+
+
+<script>
+function myFunction() {
+    var result = document.getElementById("SearchText").value;
+	document.getElementById("result").innerHTML = result;
+	document.getElementById("abc").href="symphony:?userId=" + result;
+}		
+</script>
+<a href="#" id="abc">
+  <img src="https://symphony.com/images/web/logo/symphony-logo-nav-light.svg" alt="Symphony Badge" style="width:200px;height:120px;border:0;">
+</a>
+</body>
+</html>
+
+}
